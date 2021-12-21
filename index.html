@@ -19,7 +19,7 @@
           applicationServerKey:
             'BN82ji7NRhzohmiPwHL4P4TdEskv_eeUN7mchNO30VgWJfuU_bgphtPD1tEvJpljVwRI5KPIs6nGnftehzrdCPs'
         });
-        console.log(JSON.stringify(push));
+        console.log("Push: ",JSON.stringify(push));
         var i = JSON.stringify(push);
         document.getElementById('pushSub').innerHTML = i;
         
@@ -28,7 +28,7 @@
       if ('serviceWorker' in navigator) {
         addEventListener('load', async () => {
           let sw = await navigator.serviceWorker.register('./sw.js');
-          console.log(sw);
+          console.log("sw register: ",sw);
         });
       }
     </script>
