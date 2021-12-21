@@ -11,12 +11,7 @@ var vapidKeys = {
 
 push.setVapidDetails('mailto:metta.job@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
-var sub = {
-    "endpoint": "https://fcm.googleapis.com/fcm/send/eWWlYo-OdJk:APA91bES_goCfusF76CpG2oFR91RbE07H2MikNWe5krFCXJPvzy7S8xkvkRDlgvZEbQ1SoNb5njOf-thptD_NZTl7ZqkHYie1OKsj6Mss8fYea71qaPlVltCs1LNK1cunB1Kv4lODzmr",
-    "expirationTime": null,
-    "keys": {
-        "p256dh": "BEStLoYgO2rA6HImiCzUuTBDtVP4i8kk9yGkQ-SkJ98Y8FlsUvPR0i9qQGh1fB3AMLz9_CRZQzDzmEej9JHEWjE",
-        "auth": "G06LYSlmkBru6_8UcY4XnQ"
-    }
-};
+var sub = i;
+console.log(i);
+
 push.sendNotification(sub, 'test message');
