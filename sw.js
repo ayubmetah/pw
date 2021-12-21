@@ -1,6 +1,6 @@
 self.addEventListener('push', function(e) {
     var options = {
-        body: 'There are customers waiting in the Queue!',
+        body: 'Customers waiting Queue!',
         icon: 'images/48.png',
         vibrate: [100, 50, 100],
         data: {

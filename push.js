@@ -1,4 +1,3 @@
-function popInvoke() {
     var push = require('web-push');
 
     // var vapidKeys = push.generateVAPIDKeys();
@@ -24,4 +23,3 @@ function popInvoke() {
 
 
     push.sendNotification(sub, 'test message');
-}
