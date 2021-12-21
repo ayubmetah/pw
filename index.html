@@ -16,6 +16,7 @@
     })
 
     async function subscribe() {
+        debugger;
         let sw = await navigator.serviceWorker.ready();
         let push await sw.pushManager.subscribe({
             userVisibleOnly: true,

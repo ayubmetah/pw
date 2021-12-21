@@ -4,3 +4,9 @@ node push.js
 git init //put into github 
 //push an existing repository from the command line
 git remote add origin https://github.com/ayubmetah/pw.git 
+//add .gitignore file to ignore node_modules folder
+git add .
+git status
+git commit -m "initial"
+git push origin master -u
+git commit -am "fix"
