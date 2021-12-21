@@ -1,0 +1,6 @@
+npm init -y
+npm i web-push
+node push.js
+git init //put into github 
+//push an existing repository from the command line
+git remote add origin https://github.com/ayubmetah/pw.git 
