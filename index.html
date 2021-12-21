@@ -7,7 +7,9 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="subscribe()">Subscribe</button>
+    <button onclick="subscribe()">Subscribe</button><br><br>
+    <h1>Push Subscription</h1>
+    <div id="pushSub"></div>
 
     <script>
       async function subscribe() {
@@ -18,6 +20,8 @@
             'BN82ji7NRhzohmiPwHL4P4TdEskv_eeUN7mchNO30VgWJfuU_bgphtPD1tEvJpljVwRI5KPIs6nGnftehzrdCPs'
         });
         console.log(JSON.stringify(push));
+        var i = JSON.parse(JSON.stringify(push));
+        document.getElementById('push').innerHTML = push;
       }
 
       if ('serviceWorker' in navigator) {

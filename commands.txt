@@ -10,3 +10,4 @@ git status
 git commit -m "initial"
 git push origin master -u
 git commit -am "fix"
+git push
