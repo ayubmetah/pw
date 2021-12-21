@@ -11,7 +11,14 @@ var vapidKeys = {
 
 push.setVapidDetails('mailto:metta.job@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
-var sub = { "endpoint": "https://fcm.googleapis.com/fcm/send/d9aoS-tVGBM:APA91bFmAIQlWqs6giHM4idSQ9Vs6WTzKoneppwbf9uaZjV_GNjdvX98mkLL6-Hk32Un-RwoNWhCpSyZnF68ppKKOsMbTmM3igz7UX1bF1Ivue4AXlKxiD_Tp8JPmjuNPE33ppMdrJ2T", "expirationTime": null, "keys": { "p256dh": "BNZB3yicp6LzI6RqYM4ELEShnleSxCuRY47eFEwzTCCgayXKR1riCNeHVq73UeOJB-12rostd47ex6_ZbKN3d1w", "auth": "x4QD7GHwaz-BoAqHDPHNtQ" } }
+var sub = {
+    "endpoint": "https://fcm.googleapis.com/fcm/send/d9aoS-tVGBM:APA91bFmAIQlWqs6giHM4idSQ9Vs6WTzKoneppwbf9uaZjV_GNjdvX98mkLL6-Hk32Un-RwoNWhCpSyZnF68ppKKOsMbTmM3igz7UX1bF1Ivue4AXlKxiD_Tp8JPmjuNPE33ppMdrJ2T",
+    "expirationTime": null,
+    "keys": {
+        "p256dh": "BNZB3yicp6LzI6RqYM4ELEShnleSxCuRY47eFEwzTCCgayXKR1riCNeHVq73UeOJB-12rostd47ex6_ZbKN3d1w",
+        "auth": "x4QD7GHwaz-BoAqHDPHNtQ"
+    }
+};
 
 
 
