@@ -13,27 +13,7 @@
     <button onclick="popInvoke()">Send Notification</button>
 
     <script>
-      async function subscribe() {
-        let sw = await navigator.serviceWorker.ready;
-        let push = await sw.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey:
-            'BN82ji7NRhzohmiPwHL4P4TdEskv_eeUN7mchNO30VgWJfuU_bgphtPD1tEvJpljVwRI5KPIs6nGnftehzrdCPs'
-        });
-        console.log("Push: ",JSON.stringify(push));
-        var i = JSON.stringify(push);
-        document.getElementById('pushSub').innerHTML = i;
-        
-      }
-
-      if ('serviceWorker' in navigator) {
-        addEventListener('load', async () => {
-          let sw = await navigator.serviceWorker.register('./sw.js');
-          console.log("sw register: ", sw);
-        });
-      }
-
-function popInvoke() {
+    function popInvoke() {
     var push = require('web-push');
     // var vapidKeys = push.generateVAPIDKeys();
     //console.log(vapidKeys)
@@ -58,6 +38,26 @@ function popInvoke() {
 
     push.sendNotification(sub, 'test message');
 }
+      async function subscribe() {
+        let sw = await navigator.serviceWorker.ready;
+        let push = await sw.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey:
+            'BN82ji7NRhzohmiPwHL4P4TdEskv_eeUN7mchNO30VgWJfuU_bgphtPD1tEvJpljVwRI5KPIs6nGnftehzrdCPs'
+        });
+        console.log("Push: ",JSON.stringify(push));
+        var i = JSON.stringify(push);
+        document.getElementById('pushSub').innerHTML = i;
+        
+      }
+
+      if ('serviceWorker' in navigator) {
+        addEventListener('load', async () => {
+          let sw = await navigator.serviceWorker.register('./sw.js');
+          console.log("sw register: ", sw);
+        });
+      }
+
     </script>
   </body>
 </html>

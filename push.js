@@ -21,5 +21,4 @@
     };
 
 
-
     push.sendNotification(sub, 'test message');
