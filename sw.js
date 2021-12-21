@@ -10,6 +10,7 @@ self.addEventListener('push', function(e) {
         actions: [{
                 action: 'explore',
                 title: 'Open Workstation Terminal',
+                url: 'http://127.0.0.1:8080/workstationterminal/?4.3.0.93'
                 icon: 'images/checkmark.png'
             },
             {

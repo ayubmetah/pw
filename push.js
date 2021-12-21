@@ -11,14 +11,8 @@ var vapidKeys = {
 
 push.setVapidDetails('mailto:metta.job@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
-var sub = {
-    "endpoint": "https://fcm.googleapis.com/fcm/send/eWWlYo-OdJk:APA91bES_goCfusF76CpG2oFR91RbE07H2MikNWe5krFCXJPvzy7S8xkvkRDlgvZEbQ1SoNb5njOf-thptD_NZTl7ZqkHYie1OKsj6Mss8fYea71qaPlVltCs1LNK1cunB1Kv4lODzmr",
-    "expirationTime": null,
-    "keys": {
-        "p256dh": "BEStLoYgO2rA6HImiCzUuTBDtVP4i8kk9yGkQ-SkJ98Y8FlsUvPR0i9qQGh1fB3AMLz9_CRZQzDzmEej9JHEWjE",
-        "auth": "G06LYSlmkBru6_8UcY4XnQ"
-    }
-}
+var sub = { "endpoint": "https://fcm.googleapis.com/fcm/send/d9aoS-tVGBM:APA91bFmAIQlWqs6giHM4idSQ9Vs6WTzKoneppwbf9uaZjV_GNjdvX98mkLL6-Hk32Un-RwoNWhCpSyZnF68ppKKOsMbTmM3igz7UX1bF1Ivue4AXlKxiD_Tp8JPmjuNPE33ppMdrJ2T", "expirationTime": null, "keys": { "p256dh": "BNZB3yicp6LzI6RqYM4ELEShnleSxCuRY47eFEwzTCCgayXKR1riCNeHVq73UeOJB-12rostd47ex6_ZbKN3d1w", "auth": "x4QD7GHwaz-BoAqHDPHNtQ" } }
+
 
 
 push.sendNotification(sub, 'test message');
