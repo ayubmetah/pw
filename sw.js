@@ -20,7 +20,5 @@ self.addEventListener('push', function(e) {
             }
         ]
     };
-    e.waitUntil(
-        self.registration.showNotification('Qmatic Orchestra', options)
-    );
+    e.waitUntil(self.registration.showNotification('Qmatic Orchestra', options));
 });
